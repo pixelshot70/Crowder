@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bfjinbd1vxqpm"]
+
+[ext_resource type="Script" uid="uid://dr7wonb4d6hhe" path="res://bolt.gd" id="1_v78vr"]
+[ext_resource type="Texture2D" uid="uid://bixeis0u2eyvp" path="res://Assets/Bolt.png" id="2_s5mil"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j3fb8"]
+
+[node name="Bolt" type="RigidBody2D" unique_id=1540970205]
+freeze = true
+script = ExtResource("1_v78vr")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1869758671]
+scale = Vector2(2.49, 2.49)
+texture = ExtResource("2_s5mil")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1521272247]
+scale = Vector2(0.81, 0.81)
+shape = SubResource("RectangleShape2D_j3fb8")
